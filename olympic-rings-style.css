@@ -1,0 +1,114 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.olympic-rings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  width: 100vh;
+  height: 100vh;
+  position: relative;
+}
+
+
+.ring {
+  margin: 50px 50px;
+  width: 40vh;
+  height: 40vh;
+  border-radius: 50%;
+  border: solid 3vh;
+  position: absolute;
+  background: transparent;
+}
+
+.blue {
+  border-color: #0081C8;
+  transform: rotateX(-45deg) scaleY(1.4142);
+}
+
+.yellow {
+  left: 22vh;
+  top: 18vh;
+  border-color: #FCB131;
+  transform: rotateX(0deg);
+}
+
+.black {
+  left: 45vh;
+  border-color: #000;
+  transform: rotateX(45deg) scaleY(1.4142);
+}
+
+
+.green {
+  left: 68vh;
+  top: 18vh;
+  border-color: #00A651;
+  transform: translateZ(20vh) rotateX(70deg) scaleY(2.9238);
+}
+  
+
+.red {
+  left: 90vh;
+  border-color: #EE334E;
+  transform: translateZ(-32vh) rotateX(80deg) scaleY(5.7588);
+}  
